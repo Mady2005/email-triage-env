@@ -1,0 +1,24 @@
+name: email-triage-env
+version: "1.0.0"
+description: "Real-world email triage environment for training AI agents"
+author: "your-hf-username"
+task_type: real_world
+observation_space:
+  type: pydantic
+  model: env.models.EmailObservation
+action_space:
+  type: pydantic
+  model: env.models.EmailAction
+reward_range: [-1.0, 1.0]
+tasks:
+  - id: classification
+    difficulty: easy
+    grader: tasks.task_easy.ClassificationGrader
+  - id: triage_reply
+    difficulty: medium
+    grader: tasks.task_medium.TriageReplyGrader
+  - id: queue_triage
+    difficulty: hard
+    grader: tasks.task_hard.QueueTriageGrader
+max_steps: 50
+hf_space: "your-username/email-triage-env"

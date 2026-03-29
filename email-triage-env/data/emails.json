@@ -1,0 +1,894 @@
+[
+  {
+    "email_id": "email-026",
+    "subject": "Implementation retrospective",
+    "body": "Implementation retrospective. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
+    "sender": "adam.delivery@example.com",
+    "sender_name": "Adam",
+    "timestamp": "2026-03-06T11:23:00Z",
+    "thread_history": [
+      "Previous update shared last week."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "meeting",
+      "confirm",
+      "timeline"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-024",
+    "subject": "Pilot adoption status",
+    "body": "Pilot adoption status. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
+    "sender": "ethan.adoption@example.com",
+    "sender_name": "Ethan",
+    "timestamp": "2026-03-04T09:21:00Z",
+    "thread_history": [
+      "Meeting notes attached in the prior message."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "status",
+      "review",
+      "notes"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-020",
+    "subject": "Design feedback request",
+    "body": "Design feedback request. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
+    "sender": "noah.design@example.com",
+    "sender_name": "Noah",
+    "timestamp": "2026-03-08T15:17:00Z",
+    "thread_history": [
+      "Previous update shared last week."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "meeting",
+      "confirm",
+      "timeline"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-012",
+    "subject": "Contract signature deadline",
+    "body": "Contract signature deadline. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
+    "sender": "mohan.procurement@example.com",
+    "sender_name": "Mohan",
+    "timestamp": "2026-03-04T09:21:00Z",
+    "thread_history": [],
+    "true_category": "urgent",
+    "required_keywords": [
+      "incident",
+      "outage",
+      "workaround"
+    ],
+    "correct_routing": "hr",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-005",
+    "subject": "Data export deadline problem",
+    "body": "Data export deadline problem. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
+    "sender": "sameer.compliance@example.com",
+    "sender_name": "Sameer",
+    "timestamp": "2026-03-05T12:14:00Z",
+    "thread_history": [
+      "Customer followed up asking for an update.",
+      "Internal team confirmed reproducibility."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "urgent",
+      "update",
+      "investigating"
+    ],
+    "correct_routing": "support",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-046",
+    "subject": "Vacation workflow question",
+    "body": "Vacation workflow question. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
+    "sender": "miguel.hr@example.com",
+    "sender_name": "Miguel",
+    "timestamp": "2026-03-07T14:16:00Z",
+    "thread_history": [],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "question",
+      "details",
+      "help"
+    ],
+    "correct_routing": "hr",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-027",
+    "subject": "Renewal prep timeline",
+    "body": "Renewal prep timeline. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
+    "sender": "mia.procurement@example.com",
+    "sender_name": "Mia",
+    "timestamp": "2026-03-07T12:24:00Z",
+    "thread_history": [
+      "Meeting notes attached in the prior message."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "status",
+      "review",
+      "notes"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-010",
+    "subject": "Pending wire transfer",
+    "body": "Pending wire transfer. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
+    "sender": "helen.ap@example.com",
+    "sender_name": "Helen",
+    "timestamp": "2026-03-02T17:19:00Z",
+    "thread_history": [
+      "Automated alert triggered 20 minutes ago."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "billing",
+      "payment",
+      "urgent"
+    ],
+    "correct_routing": "billing",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-030",
+    "subject": "Crypto newsletter invite",
+    "body": "Crypto newsletter invite. Treat this as low-value or potentially malicious email rather than a legitimate request.",
+    "sender": "vip.profits@example.com",
+    "sender_name": "VIP",
+    "timestamp": "2026-03-03T10:12:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "fraud",
+      "ignore"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-017",
+    "subject": "Onboarding completed",
+    "body": "Onboarding completed. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
+    "sender": "mei.success@example.com",
+    "sender_name": "Mei",
+    "timestamp": "2026-03-05T12:14:00Z",
+    "thread_history": [
+      "Previous update shared last week."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "meeting",
+      "confirm",
+      "timeline"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-032",
+    "subject": "Unexpected newsletter signup",
+    "body": "Unexpected newsletter signup. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
+    "sender": "hello.newsletter@example.com",
+    "sender_name": "Hello",
+    "timestamp": "2026-03-05T12:14:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "phishing",
+      "do not click"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-022",
+    "subject": "Implementation workshop timing",
+    "body": "Implementation workshop timing. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
+    "sender": "owen.cs@example.com",
+    "sender_name": "Owen",
+    "timestamp": "2026-03-02T17:19:00Z",
+    "thread_history": [],
+    "true_category": "normal",
+    "required_keywords": [
+      "thanks",
+      "update",
+      "schedule"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-013",
+    "subject": "Weekly project update",
+    "body": "Weekly project update. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
+    "sender": "priya.pm@example.com",
+    "sender_name": "Priya",
+    "timestamp": "2026-03-01T08:10:00Z",
+    "thread_history": [],
+    "true_category": "normal",
+    "required_keywords": [
+      "thanks",
+      "update",
+      "schedule"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-004",
+    "subject": "Payroll cutoff issue",
+    "body": "Payroll cutoff issue. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
+    "sender": "olivia.hr@example.com",
+    "sender_name": "Olivia",
+    "timestamp": "2026-03-04T11:13:00Z",
+    "thread_history": [
+      "Automated alert triggered 20 minutes ago."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "incident",
+      "outage",
+      "workaround"
+    ],
+    "correct_routing": "hr",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-040",
+    "subject": "API rate limits question",
+    "body": "API rate limits question. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
+    "sender": "harper.dev@example.com",
+    "sender_name": "Harper",
+    "timestamp": "2026-03-01T08:10:00Z",
+    "thread_history": [],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "question",
+      "details",
+      "help"
+    ],
+    "correct_routing": "support",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-039",
+    "subject": "Domain security renewal",
+    "body": "Domain security renewal. Treat this as low-value or potentially malicious email rather than a legitimate request.",
+    "sender": "notice.domain@example.com",
+    "sender_name": "Notice",
+    "timestamp": "2026-03-04T09:21:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "fraud",
+      "ignore"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-011",
+    "subject": "Employee file exposure",
+    "body": "Employee file exposure. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
+    "sender": "amelia.peopleops@example.com",
+    "sender_name": "Amelia",
+    "timestamp": "2026-03-03T08:20:00Z",
+    "thread_history": [
+      "Customer followed up asking for an update.",
+      "Internal team confirmed reproducibility."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "legal",
+      "response",
+      "today"
+    ],
+    "correct_routing": "legal",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-025",
+    "subject": "Confirm attendee list",
+    "body": "Confirm attendee list. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
+    "sender": "zoe.events@example.com",
+    "sender_name": "Zoe",
+    "timestamp": "2026-03-05T10:22:00Z",
+    "thread_history": [],
+    "true_category": "normal",
+    "required_keywords": [
+      "thanks",
+      "update",
+      "schedule"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-036",
+    "subject": "Urgent invoice attachment",
+    "body": "Urgent invoice attachment. Treat this as low-value or potentially malicious email rather than a legitimate request.",
+    "sender": "billing.invoice@example.com",
+    "sender_name": "Billing",
+    "timestamp": "2026-03-01T16:18:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "fraud",
+      "ignore"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-001",
+    "subject": "Production outage in region",
+    "body": "Production outage in region. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
+    "sender": "nina.ops@example.com",
+    "sender_name": "Nina",
+    "timestamp": "2026-03-01T08:10:00Z",
+    "thread_history": [
+      "Automated alert triggered 20 minutes ago."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "urgent",
+      "update",
+      "investigating"
+    ],
+    "correct_routing": "support",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-044",
+    "subject": "SAML and SCIM support",
+    "body": "SAML and SCIM support. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
+    "sender": "trent.it@example.com",
+    "sender_name": "Trent",
+    "timestamp": "2026-03-05T12:14:00Z",
+    "thread_history": [
+      "Security review already completed."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "billing",
+      "policy",
+      "support"
+    ],
+    "correct_routing": "support",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-019",
+    "subject": "Training session reminder",
+    "body": "Training session reminder. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
+    "sender": "sophia.enablement@example.com",
+    "sender_name": "Sophia",
+    "timestamp": "2026-03-07T14:16:00Z",
+    "thread_history": [],
+    "true_category": "normal",
+    "required_keywords": [
+      "thanks",
+      "update",
+      "schedule"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-034",
+    "subject": "Reset payroll account",
+    "body": "Reset payroll account. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
+    "sender": "alerts.payroll@example.com",
+    "sender_name": "Alerts",
+    "timestamp": "2026-03-07T14:16:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "spam",
+      "archive"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-049",
+    "subject": "Failed reimbursements",
+    "body": "Failed reimbursements. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
+    "sender": "rachel.finance@example.com",
+    "sender_name": "Rachel",
+    "timestamp": "2026-03-02T17:19:00Z",
+    "thread_history": [],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "question",
+      "details",
+      "help"
+    ],
+    "correct_routing": "billing",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-042",
+    "subject": "Parental leave policy",
+    "body": "Parental leave policy. The request asks for clarification on billing, support, legal, or HR behavior.",
+    "sender": "hannah.people@example.com",
+    "sender_name": "Hannah",
+    "timestamp": "2026-03-03T10:12:00Z",
+    "thread_history": [
+      "Comparing vendors this quarter."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "contract",
+      "workflow",
+      "feature"
+    ],
+    "correct_routing": "hr",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-031",
+    "subject": "Claim your gift card",
+    "body": "Claim your gift card. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
+    "sender": "rewards.voucher@example.com",
+    "sender_name": "Rewards",
+    "timestamp": "2026-03-04T11:13:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "spam",
+      "archive"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-029",
+    "subject": "Mailbox quota full",
+    "body": "Mailbox quota full. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
+    "sender": "security.alerts@example.com",
+    "sender_name": "Security",
+    "timestamp": "2026-03-02T09:11:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "phishing",
+      "do not click"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-021",
+    "subject": "Quarterly review notes",
+    "body": "Quarterly review notes. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
+    "sender": "elena.accounts@example.com",
+    "sender_name": "Elena",
+    "timestamp": "2026-03-01T16:18:00Z",
+    "thread_history": [
+      "Meeting notes attached in the prior message."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "status",
+      "review",
+      "notes"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-023",
+    "subject": "Documentation refresh complete",
+    "body": "Documentation refresh complete. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
+    "sender": "isla.docs@example.com",
+    "sender_name": "Isla",
+    "timestamp": "2026-03-03T08:20:00Z",
+    "thread_history": [
+      "Previous update shared last week."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "meeting",
+      "confirm",
+      "timeline"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-043",
+    "subject": "Need DPA details",
+    "body": "Need DPA details. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
+    "sender": "sara.procurement@example.com",
+    "sender_name": "Sara",
+    "timestamp": "2026-03-04T11:13:00Z",
+    "thread_history": [],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "question",
+      "details",
+      "help"
+    ],
+    "correct_routing": "legal",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-047",
+    "subject": "Export formats support",
+    "body": "Export formats support. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
+    "sender": "chloe.data@example.com",
+    "sender_name": "Chloe",
+    "timestamp": "2026-03-08T15:17:00Z",
+    "thread_history": [
+      "Security review already completed."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "billing",
+      "policy",
+      "support"
+    ],
+    "correct_routing": "legal",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-037",
+    "subject": "Free AI market report",
+    "body": "Free AI market report. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
+    "sender": "reports.market@example.com",
+    "sender_name": "Reports",
+    "timestamp": "2026-03-02T17:19:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "spam",
+      "archive"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-033",
+    "subject": "Cheap backlinks available",
+    "body": "Cheap backlinks available. Treat this as low-value or potentially malicious email rather than a legitimate request.",
+    "sender": "sales.rank@example.com",
+    "sender_name": "Sales",
+    "timestamp": "2026-03-06T13:15:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "fraud",
+      "ignore"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-045",
+    "subject": "Invoice recipients question",
+    "body": "Invoice recipients question. The request asks for clarification on billing, support, legal, or HR behavior.",
+    "sender": "lila.finance@example.com",
+    "sender_name": "Lila",
+    "timestamp": "2026-03-06T13:15:00Z",
+    "thread_history": [
+      "Comparing vendors this quarter."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "contract",
+      "workflow",
+      "feature"
+    ],
+    "correct_routing": "billing",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-014",
+    "subject": "Reschedule roadmap meeting",
+    "body": "Reschedule roadmap meeting. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
+    "sender": "aaron.strategy@example.com",
+    "sender_name": "Aaron",
+    "timestamp": "2026-03-02T09:11:00Z",
+    "thread_history": [
+      "Previous update shared last week."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "meeting",
+      "confirm",
+      "timeline"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-050",
+    "subject": "Policy acknowledgement scope",
+    "body": "Policy acknowledgement scope. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
+    "sender": "jasmine.people@example.com",
+    "sender_name": "Jasmine",
+    "timestamp": "2026-03-03T08:20:00Z",
+    "thread_history": [
+      "Security review already completed."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "billing",
+      "policy",
+      "support"
+    ],
+    "correct_routing": "hr",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-048",
+    "subject": "Auto-renewal terms",
+    "body": "Auto-renewal terms. The request asks for clarification on billing, support, legal, or HR behavior.",
+    "sender": "kevin.legalops@example.com",
+    "sender_name": "Kevin",
+    "timestamp": "2026-03-01T16:18:00Z",
+    "thread_history": [
+      "Comparing vendors this quarter."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "contract",
+      "workflow",
+      "feature"
+    ],
+    "correct_routing": "support",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-003",
+    "subject": "Immediate legal notice",
+    "body": "Immediate legal notice. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
+    "sender": "jordan.legal@example.com",
+    "sender_name": "Jordan",
+    "timestamp": "2026-03-03T10:12:00Z",
+    "thread_history": [],
+    "true_category": "urgent",
+    "required_keywords": [
+      "legal",
+      "response",
+      "today"
+    ],
+    "correct_routing": "legal",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-028",
+    "subject": "Boost traffic fast",
+    "body": "Boost traffic fast. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
+    "sender": "promo.growth@example.com",
+    "sender_name": "Promo",
+    "timestamp": "2026-03-01T08:10:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "spam",
+      "archive"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-038",
+    "subject": "Remote assistant offer",
+    "body": "Remote assistant offer. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
+    "sender": "careers.hiring@example.com",
+    "sender_name": "Careers",
+    "timestamp": "2026-03-03T08:20:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "phishing",
+      "do not click"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-006",
+    "subject": "Termination dispute response",
+    "body": "Termination dispute response. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
+    "sender": "rebecca.legal@example.com",
+    "sender_name": "Rebecca",
+    "timestamp": "2026-03-06T13:15:00Z",
+    "thread_history": [],
+    "true_category": "urgent",
+    "required_keywords": [
+      "billing",
+      "payment",
+      "urgent"
+    ],
+    "correct_routing": "billing",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-035",
+    "subject": "Warm B2B leads",
+    "body": "Warm B2B leads. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
+    "sender": "contact.leads@example.com",
+    "sender_name": "Contact",
+    "timestamp": "2026-03-08T15:17:00Z",
+    "thread_history": [],
+    "true_category": "spam",
+    "required_keywords": [
+      "phishing",
+      "do not click"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-007",
+    "subject": "SSO login outage",
+    "body": "SSO login outage. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
+    "sender": "leo.it@example.com",
+    "sender_name": "Leo",
+    "timestamp": "2026-03-07T14:16:00Z",
+    "thread_history": [
+      "Automated alert triggered 20 minutes ago."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "legal",
+      "response",
+      "today"
+    ],
+    "correct_routing": "legal",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-009",
+    "subject": "Subpoena for audit records",
+    "body": "Subpoena for audit records. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
+    "sender": "david.legal@example.com",
+    "sender_name": "David",
+    "timestamp": "2026-03-01T16:18:00Z",
+    "thread_history": [],
+    "true_category": "urgent",
+    "required_keywords": [
+      "urgent",
+      "update",
+      "investigating"
+    ],
+    "correct_routing": "support",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-015",
+    "subject": "Monthly usage report",
+    "body": "Monthly usage report. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
+    "sender": "lucy.analytics@example.com",
+    "sender_name": "Lucy",
+    "timestamp": "2026-03-03T10:12:00Z",
+    "thread_history": [
+      "Meeting notes attached in the prior message."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "status",
+      "review",
+      "notes"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-016",
+    "subject": "Partnership memo review",
+    "body": "Partnership memo review. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
+    "sender": "gabriel.bizdev@example.com",
+    "sender_name": "Gabriel",
+    "timestamp": "2026-03-04T11:13:00Z",
+    "thread_history": [],
+    "true_category": "normal",
+    "required_keywords": [
+      "thanks",
+      "update",
+      "schedule"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-018",
+    "subject": "Steering committee agenda",
+    "body": "Steering committee agenda. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
+    "sender": "ben.operations@example.com",
+    "sender_name": "Ben",
+    "timestamp": "2026-03-06T13:15:00Z",
+    "thread_history": [
+      "Meeting notes attached in the prior message."
+    ],
+    "true_category": "normal",
+    "required_keywords": [
+      "status",
+      "review",
+      "notes"
+    ],
+    "correct_routing": null,
+    "requires_reply": false
+  },
+  {
+    "email_id": "email-002",
+    "subject": "Payment processor failures",
+    "body": "Payment processor failures. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
+    "sender": "marcus.finance@example.com",
+    "sender_name": "Marcus",
+    "timestamp": "2026-03-02T09:11:00Z",
+    "thread_history": [
+      "Customer followed up asking for an update.",
+      "Internal team confirmed reproducibility."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "billing",
+      "payment",
+      "urgent"
+    ],
+    "correct_routing": "billing",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-008",
+    "subject": "Duplicate annual charge",
+    "body": "Duplicate annual charge. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
+    "sender": "claire.accounts@example.com",
+    "sender_name": "Claire",
+    "timestamp": "2026-03-08T15:17:00Z",
+    "thread_history": [
+      "Customer followed up asking for an update.",
+      "Internal team confirmed reproducibility."
+    ],
+    "true_category": "urgent",
+    "required_keywords": [
+      "incident",
+      "outage",
+      "workaround"
+    ],
+    "correct_routing": "hr",
+    "requires_reply": true
+  },
+  {
+    "email_id": "email-041",
+    "subject": "Annual billing for seats",
+    "body": "Annual billing for seats. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
+    "sender": "carter.procurement@example.com",
+    "sender_name": "Carter",
+    "timestamp": "2026-03-02T09:11:00Z",
+    "thread_history": [
+      "Security review already completed."
+    ],
+    "true_category": "inquiry",
+    "required_keywords": [
+      "billing",
+      "policy",
+      "support"
+    ],
+    "correct_routing": "billing",
+    "requires_reply": true
+  }
+]
