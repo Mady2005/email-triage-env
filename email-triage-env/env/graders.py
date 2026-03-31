@@ -7,6 +7,40 @@ from .models import EmailAction, EmailObservation
 from .reward import compute_reply_quality
 
 
+CATEGORY_ALIASES = {
+    "promotional": "spam",
+    "promotion": "spam",
+    "junk": "spam",
+    "phishing": "spam",
+    "marketing": "spam",
+    "question": "inquiry",
+    "query": "inquiry",
+    "request": "inquiry",
+    "routine": "normal",
+    "general": "normal",
+    "regular": "normal",
+    "critical": "urgent",
+    "high": "urgent",
+    "high_priority": "urgent",
+}
+
+ACTION_ALIASES = {
+    "respond": "reply",
+    "answer": "reply",
+    "send_reply": "reply",
+    "label": "classify",
+}
+
+DEPARTMENT_ALIASES = {
+    "customer support": "support",
+    "tech support": "support",
+    "finance": "billing",
+    "accounting": "billing",
+    "people": "hr",
+    "people ops": "hr",
+}
+
+
 class BaseGrader:
     def __init__(self) -> None:
         self.dataset = EmailDataset()
@@ -27,7 +61,28 @@ class BaseGrader:
             end = candidate.rfind("}")
             if start != -1 and end != -1 and end > start:
                 candidate = candidate[start : end + 1]
-        return EmailAction.model_validate(json.loads(candidate))
+        payload = json.loads(candidate)
+
+        action_type = str(payload.get("action_type", "")).strip().lower()
+        payload["action_type"] = ACTION_ALIASES.get(action_type, action_type or "classify")
+
+        category = payload.get("category")
+        if isinstance(category, str):
+            normalized = category.strip().lower().replace(" ", "_")
+            normalized = CATEGORY_ALIASES.get(normalized, normalized)
+            if normalized not in {"urgent", "normal", "spam", "inquiry"}:
+                normalized = "normal"
+            payload["category"] = normalized
+
+        forward_to = payload.get("forward_to")
+        if isinstance(forward_to, str):
+            normalized = forward_to.strip().lower()
+            normalized = DEPARTMENT_ALIASES.get(normalized, normalized)
+            if normalized not in {"billing", "support", "legal", "hr"}:
+                normalized = None
+            payload["forward_to"] = normalized
+
+        return EmailAction.model_validate(payload)
 
     def _record_for_last_obs(self):
         if self._last_observation is None:
