@@ -1,3 +1,13 @@
+---
+title: email-triage-env
+emoji: "📧"
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Email Triage OpenEnv
 
 `email-triage-env` is a production-ready OpenEnv environment for the Meta PyTorch OpenEnv Hackathon. It simulates a realistic business inbox where an AI agent must classify inbound email, reply when appropriate, forward to a department, escalate sensitive issues, or archive low-value traffic.
