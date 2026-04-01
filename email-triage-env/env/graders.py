@@ -191,7 +191,7 @@ class QueueTriageGrader(BaseGrader):
         record = self._record_for_last_obs()
         self.correct_classifications += int(action.category == record.true_category)
 
-        expected_escalation = record.true_category == "urgent" and record.correct_routing in {"legal", "hr"}
+        expected_escalation = record.escalation_required
         if action.action_type in {"forward", "escalate"} or record.correct_routing is not None:
             self.routing_opportunities += 1
             route_ok = False
@@ -208,7 +208,9 @@ class QueueTriageGrader(BaseGrader):
         ) or (
             action.action_type == "reply" and record.true_category == "spam"
         ) or (
-            action.action_type == "forward" and record.correct_routing in {"legal", "hr"} and action.forward_to != record.correct_routing
+            action.action_type == "forward" and record.escalation_required
+        ) or (
+            action.action_type == "escalate" and not record.escalation_required and record.expected_primary_action != "escalate"
         )
         self.destructive_actions += int(destructive)
         self.steps += 1

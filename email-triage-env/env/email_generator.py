@@ -107,6 +107,36 @@ def _build_thread_history(category: str, index: int, routing: str | None) -> lis
     return base_threads[category][:count]
 
 
+def _risk_flags(category: str, index: int, routing: str | None) -> list[str]:
+    if category == "urgent":
+        if routing in {"legal", "hr"}:
+            return ["policy_sensitive", "human_review", "time_bound"]
+        return ["customer_impact", "time_bound", "active_incident"]
+    if category == "spam":
+        return ["suspicious_sender", "unsolicited", "credential_risk" if index % 2 else "marketing_lure"]
+    if category == "inquiry":
+        if routing == "legal":
+            return ["needs_precision", "contract_question"]
+        if routing == "hr":
+            return ["policy_question", "people_sensitive"]
+        return ["legitimate_request", "needs_reply"]
+    return ["coordination", "low_risk"]
+
+
+def _expected_primary_action(category: str, routing: str | None, requires_reply: bool) -> tuple[str, bool]:
+    if category == "spam":
+        return "archive", False
+    if category == "urgent":
+        if routing in {"legal", "hr"}:
+            return "escalate", True
+        return "forward", False
+    if category == "inquiry":
+        return "reply", False
+    if requires_reply:
+        return "reply", False
+    return "classify", False
+
+
 def build_seeded_emails() -> list[dict]:
     random.seed(SEED)
 
@@ -318,6 +348,8 @@ def build_seeded_emails() -> list[dict]:
             keywords = spec["keywords"][index % len(spec["keywords"])]
             routing = spec["routing_cycle"][index % len(spec["routing_cycle"])]
             thread_history = _build_thread_history(category, index, routing)
+            requires_reply = bool(spec["requires_reply"] or category == "inquiry")
+            expected_primary_action, escalation_required = _expected_primary_action(category, routing, requires_reply)
             emails.append(
                 {
                     "email_id": f"email-{len(emails) + 1:03d}",
@@ -330,7 +362,10 @@ def build_seeded_emails() -> list[dict]:
                     "true_category": category,
                     "required_keywords": keywords,
                     "correct_routing": routing,
-                    "requires_reply": bool(spec["requires_reply"] or category == "inquiry"),
+                    "requires_reply": requires_reply,
+                    "expected_primary_action": expected_primary_action,
+                    "escalation_required": escalation_required,
+                    "risk_flags": _risk_flags(category, index, routing),
                 }
             )
 
@@ -350,9 +385,18 @@ class EmailDataset:
         self.path = path or DATA_PATH
         if not self.path.exists():
             ensure_dataset(self.path)
+        self.records = self._load_records()
+
+    def _load_records(self) -> list[EmailRecord]:
         with self.path.open("r", encoding="utf-8") as handle:
             raw_data = json.load(handle)
-        self.records = [EmailRecord.model_validate(item) for item in raw_data]
+        try:
+            return [EmailRecord.model_validate(item) for item in raw_data]
+        except Exception:
+            ensure_dataset(self.path)
+            with self.path.open("r", encoding="utf-8") as handle:
+                refreshed = json.load(handle)
+            return [EmailRecord.model_validate(item) for item in refreshed]
 
     def __len__(self) -> int:
         return len(self.records)

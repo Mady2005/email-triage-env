@@ -57,19 +57,27 @@ def compute_reward(action: EmailAction, email: EmailRecord) -> EmailReward:
         breakdown["reply_quality"] = round(sum(compute_reply_quality(action.reply_body, email).values()), 4)
         if email.true_category == "spam":
             breakdown["routing"] = -0.15
+        elif email.expected_primary_action == "reply":
+            breakdown["routing"] = 0.10
     elif action.action_type == "archive":
         if email.true_category == "urgent":
             breakdown["routing"] = -0.20
+        elif email.expected_primary_action == "archive":
+            breakdown["routing"] = 0.30
     elif action.action_type == "forward":
         if action.forward_to is not None and action.forward_to == email.correct_routing:
             breakdown["routing"] = 0.30
         elif email.correct_routing is not None:
             breakdown["routing"] = -0.10
     elif action.action_type == "escalate":
-        if email.true_category == "urgent" and email.correct_routing in {"legal", "hr"}:
+        if email.escalation_required:
             breakdown["routing"] = 0.30
         elif email.true_category == "urgent" and email.correct_routing in {"billing", "support"}:
             breakdown["routing"] = -0.05
+        else:
+            breakdown["routing"] = -0.10
+    elif action.action_type == "classify" and email.expected_primary_action == "classify":
+        breakdown["routing"] = 0.10
 
     reward_value = max(-1.0, min(1.0, sum(breakdown.values())))
     return EmailReward(value=reward_value, breakdown=breakdown)

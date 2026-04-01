@@ -17,7 +17,13 @@
       "timeline"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-024",
@@ -37,7 +43,13 @@
       "notes"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-020",
@@ -57,7 +69,13 @@
       "timeline"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-012",
@@ -77,7 +95,14 @@
       "workaround"
     ],
     "correct_routing": "hr",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "escalate",
+    "escalation_required": true,
+    "risk_flags": [
+      "policy_sensitive",
+      "human_review",
+      "time_bound"
+    ]
   },
   {
     "email_id": "email-005",
@@ -96,7 +121,14 @@
       "investigating"
     ],
     "correct_routing": "support",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "forward",
+    "escalation_required": false,
+    "risk_flags": [
+      "customer_impact",
+      "time_bound",
+      "active_incident"
+    ]
   },
   {
     "email_id": "email-046",
@@ -115,7 +147,13 @@
       "help"
     ],
     "correct_routing": "hr",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "policy_question",
+      "people_sensitive"
+    ]
   },
   {
     "email_id": "email-027",
@@ -134,7 +172,13 @@
       "notes"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-010",
@@ -154,7 +198,14 @@
       "urgent"
     ],
     "correct_routing": "billing",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "forward",
+    "escalation_required": false,
+    "risk_flags": [
+      "customer_impact",
+      "time_bound",
+      "active_incident"
+    ]
   },
   {
     "email_id": "email-030",
@@ -172,7 +223,14 @@
       "ignore"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "marketing_lure"
+    ]
   },
   {
     "email_id": "email-017",
@@ -191,7 +249,13 @@
       "timeline"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-032",
@@ -209,7 +273,14 @@
       "do not click"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "marketing_lure"
+    ]
   },
   {
     "email_id": "email-022",
@@ -229,7 +300,13 @@
       "schedule"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-013",
@@ -248,7 +325,13 @@
       "schedule"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-004",
@@ -268,7 +351,14 @@
       "workaround"
     ],
     "correct_routing": "hr",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "escalate",
+    "escalation_required": true,
+    "risk_flags": [
+      "policy_sensitive",
+      "human_review",
+      "time_bound"
+    ]
   },
   {
     "email_id": "email-040",
@@ -287,7 +377,13 @@
       "help"
     ],
     "correct_routing": "support",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "legitimate_request",
+      "needs_reply"
+    ]
   },
   {
     "email_id": "email-039",
@@ -306,7 +402,14 @@
       "ignore"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "credential_risk"
+    ]
   },
   {
     "email_id": "email-011",
@@ -325,7 +428,14 @@
       "today"
     ],
     "correct_routing": "legal",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "escalate",
+    "escalation_required": true,
+    "risk_flags": [
+      "policy_sensitive",
+      "human_review",
+      "time_bound"
+    ]
   },
   {
     "email_id": "email-025",
@@ -344,7 +454,13 @@
       "schedule"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-036",
@@ -362,7 +478,14 @@
       "ignore"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "marketing_lure"
+    ]
   },
   {
     "email_id": "email-001",
@@ -381,7 +504,14 @@
       "investigating"
     ],
     "correct_routing": "support",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "forward",
+    "escalation_required": false,
+    "risk_flags": [
+      "customer_impact",
+      "time_bound",
+      "active_incident"
+    ]
   },
   {
     "email_id": "email-044",
@@ -400,7 +530,13 @@
       "support"
     ],
     "correct_routing": "support",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "legitimate_request",
+      "needs_reply"
+    ]
   },
   {
     "email_id": "email-019",
@@ -419,7 +555,13 @@
       "schedule"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-034",
@@ -437,7 +579,14 @@
       "archive"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "marketing_lure"
+    ]
   },
   {
     "email_id": "email-049",
@@ -457,7 +606,13 @@
       "help"
     ],
     "correct_routing": "billing",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "legitimate_request",
+      "needs_reply"
+    ]
   },
   {
     "email_id": "email-042",
@@ -476,7 +631,13 @@
       "feature"
     ],
     "correct_routing": "hr",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "policy_question",
+      "people_sensitive"
+    ]
   },
   {
     "email_id": "email-031",
@@ -495,7 +656,14 @@
       "archive"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "credential_risk"
+    ]
   },
   {
     "email_id": "email-029",
@@ -514,7 +682,14 @@
       "do not click"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "credential_risk"
+    ]
   },
   {
     "email_id": "email-021",
@@ -533,7 +708,13 @@
       "notes"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-023",
@@ -552,7 +733,13 @@
       "timeline"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-043",
@@ -572,7 +759,13 @@
       "help"
     ],
     "correct_routing": "legal",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "needs_precision",
+      "contract_question"
+    ]
   },
   {
     "email_id": "email-047",
@@ -592,7 +785,13 @@
       "support"
     ],
     "correct_routing": "legal",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "needs_precision",
+      "contract_question"
+    ]
   },
   {
     "email_id": "email-037",
@@ -611,7 +810,14 @@
       "archive"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "credential_risk"
+    ]
   },
   {
     "email_id": "email-033",
@@ -630,7 +836,14 @@
       "ignore"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "credential_risk"
+    ]
   },
   {
     "email_id": "email-045",
@@ -650,7 +863,13 @@
       "feature"
     ],
     "correct_routing": "billing",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "legitimate_request",
+      "needs_reply"
+    ]
   },
   {
     "email_id": "email-014",
@@ -670,7 +889,13 @@
       "timeline"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-050",
@@ -689,7 +914,13 @@
       "support"
     ],
     "correct_routing": "hr",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "policy_question",
+      "people_sensitive"
+    ]
   },
   {
     "email_id": "email-048",
@@ -708,7 +939,13 @@
       "feature"
     ],
     "correct_routing": "support",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "legitimate_request",
+      "needs_reply"
+    ]
   },
   {
     "email_id": "email-003",
@@ -727,7 +964,14 @@
       "today"
     ],
     "correct_routing": "legal",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "escalate",
+    "escalation_required": true,
+    "risk_flags": [
+      "policy_sensitive",
+      "human_review",
+      "time_bound"
+    ]
   },
   {
     "email_id": "email-028",
@@ -745,7 +989,14 @@
       "archive"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "marketing_lure"
+    ]
   },
   {
     "email_id": "email-038",
@@ -763,7 +1014,14 @@
       "do not click"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "marketing_lure"
+    ]
   },
   {
     "email_id": "email-006",
@@ -783,7 +1041,14 @@
       "urgent"
     ],
     "correct_routing": "billing",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "forward",
+    "escalation_required": false,
+    "risk_flags": [
+      "customer_impact",
+      "time_bound",
+      "active_incident"
+    ]
   },
   {
     "email_id": "email-035",
@@ -802,7 +1067,14 @@
       "do not click"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "archive",
+    "escalation_required": false,
+    "risk_flags": [
+      "suspicious_sender",
+      "unsolicited",
+      "credential_risk"
+    ]
   },
   {
     "email_id": "email-007",
@@ -821,7 +1093,14 @@
       "today"
     ],
     "correct_routing": "legal",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "escalate",
+    "escalation_required": true,
+    "risk_flags": [
+      "policy_sensitive",
+      "human_review",
+      "time_bound"
+    ]
   },
   {
     "email_id": "email-009",
@@ -840,7 +1119,14 @@
       "investigating"
     ],
     "correct_routing": "support",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "forward",
+    "escalation_required": false,
+    "risk_flags": [
+      "customer_impact",
+      "time_bound",
+      "active_incident"
+    ]
   },
   {
     "email_id": "email-015",
@@ -859,7 +1145,13 @@
       "notes"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-016",
@@ -879,7 +1171,13 @@
       "schedule"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-018",
@@ -899,7 +1197,13 @@
       "notes"
     ],
     "correct_routing": null,
-    "requires_reply": false
+    "requires_reply": false,
+    "expected_primary_action": "classify",
+    "escalation_required": false,
+    "risk_flags": [
+      "coordination",
+      "low_risk"
+    ]
   },
   {
     "email_id": "email-002",
@@ -919,7 +1223,14 @@
       "urgent"
     ],
     "correct_routing": "billing",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "forward",
+    "escalation_required": false,
+    "risk_flags": [
+      "customer_impact",
+      "time_bound",
+      "active_incident"
+    ]
   },
   {
     "email_id": "email-008",
@@ -939,7 +1250,14 @@
       "workaround"
     ],
     "correct_routing": "hr",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "escalate",
+    "escalation_required": true,
+    "risk_flags": [
+      "policy_sensitive",
+      "human_review",
+      "time_bound"
+    ]
   },
   {
     "email_id": "email-041",
@@ -959,6 +1277,12 @@
       "support"
     ],
     "correct_routing": "billing",
-    "requires_reply": true
+    "requires_reply": true,
+    "expected_primary_action": "reply",
+    "escalation_required": false,
+    "risk_flags": [
+      "legitimate_request",
+      "needs_reply"
+    ]
   }
 ]

@@ -68,3 +68,6 @@ class EmailRecord(BaseSchema):
     required_keywords: list[str]
     correct_routing: Optional[Literal["billing", "support", "legal", "hr"]] = None
     requires_reply: bool
+    expected_primary_action: Literal["classify", "reply", "forward", "archive", "escalate"]
+    escalation_required: bool = False
+    risk_flags: list[str] = []
