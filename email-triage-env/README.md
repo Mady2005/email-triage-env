@@ -1,5 +1,5 @@
 ---
-title: email-triage-env
+title: email-triage-env-v2
 emoji: "📧"
 colorFrom: blue
 colorTo: green
