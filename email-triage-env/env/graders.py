@@ -174,7 +174,10 @@ class QueueTriageGrader(BaseGrader):
         current_position = 21 - obs.queue_remaining
         return (
             "Process this inbox item. Available action types: classify, reply, forward, archive, escalate.\n"
-            "Return JSON only with keys action_type, category, reply_body, forward_to.\n\n"
+            "Return JSON only with keys action_type, category, reply_body, forward_to.\n"
+            "Operational policy: escalate only when the email is urgent and HR/legal sensitive; "
+            "forward operational urgent issues to billing or support; archive suspicious spam; "
+            "reply with concrete acknowledgement when the sender expects an answer.\n\n"
             f"Queue position: {current_position} of 20\n"
             f"Email ID: {obs.email_id}\n"
             f"Sender: {obs.sender_name} <{obs.sender}>\n"
@@ -204,6 +207,8 @@ class QueueTriageGrader(BaseGrader):
             action.action_type == "archive" and record.true_category == "urgent"
         ) or (
             action.action_type == "reply" and record.true_category == "spam"
+        ) or (
+            action.action_type == "forward" and record.correct_routing in {"legal", "hr"} and action.forward_to != record.correct_routing
         )
         self.destructive_actions += int(destructive)
         self.steps += 1

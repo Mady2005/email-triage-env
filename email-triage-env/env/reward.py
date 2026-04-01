@@ -63,9 +63,13 @@ def compute_reward(action: EmailAction, email: EmailRecord) -> EmailReward:
     elif action.action_type == "forward":
         if action.forward_to is not None and action.forward_to == email.correct_routing:
             breakdown["routing"] = 0.30
+        elif email.correct_routing is not None:
+            breakdown["routing"] = -0.10
     elif action.action_type == "escalate":
-        if email.true_category == "urgent" and email.correct_routing is not None:
+        if email.true_category == "urgent" and email.correct_routing in {"legal", "hr"}:
             breakdown["routing"] = 0.30
+        elif email.true_category == "urgent" and email.correct_routing in {"billing", "support"}:
+            breakdown["routing"] = -0.05
 
     reward_value = max(-1.0, min(1.0, sum(breakdown.values())))
     return EmailReward(value=reward_value, breakdown=breakdown)

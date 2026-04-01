@@ -2,12 +2,13 @@
   {
     "email_id": "email-026",
     "subject": "Implementation retrospective",
-    "body": "Implementation retrospective. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
-    "sender": "adam.delivery@example.com",
+    "body": "Implementation retrospective. We are sharing normal project coordination details and would appreciate confirmation when convenient. This note is tied to OPS-4213 for Pinecone Systems and is mostly for planning clarity. The next internal checkpoint is on business day 3. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "adam.delivery@pinecone.example",
     "sender_name": "Adam",
     "timestamp": "2026-03-06T11:23:00Z",
     "thread_history": [
-      "Previous update shared last week."
+      "Project coordinator note: OPS-4213 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Pinecone Systems requested a lightweight acknowledgement."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -21,12 +22,13 @@
   {
     "email_id": "email-024",
     "subject": "Pilot adoption status",
-    "body": "Pilot adoption status. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
-    "sender": "ethan.adoption@example.com",
+    "body": "Pilot adoption status. No urgent action is required. This is mainly for planning, scheduling, or status visibility. This note is tied to OPS-4211 for Blue Harbor Bank and is mostly for planning clarity. The next internal checkpoint is on business day 4. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "ethan.adoption@blueharbor.example",
     "sender_name": "Ethan",
     "timestamp": "2026-03-04T09:21:00Z",
     "thread_history": [
-      "Meeting notes attached in the prior message."
+      "Project coordinator note: OPS-4211 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Blue Harbor Bank requested a lightweight acknowledgement."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -40,12 +42,13 @@
   {
     "email_id": "email-020",
     "subject": "Design feedback request",
-    "body": "Design feedback request. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
-    "sender": "noah.design@example.com",
+    "body": "Design feedback request. We are sharing normal project coordination details and would appreciate confirmation when convenient. This note is tied to OPS-4207 for Meridian Bio and is mostly for planning clarity. The next internal checkpoint is on business day 3. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "noah.design@meridian.example",
     "sender_name": "Noah",
     "timestamp": "2026-03-08T15:17:00Z",
     "thread_history": [
-      "Previous update shared last week."
+      "Project coordinator note: OPS-4207 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Meridian Bio requested a lightweight acknowledgement."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -59,11 +62,14 @@
   {
     "email_id": "email-012",
     "subject": "Contract signature deadline",
-    "body": "Contract signature deadline. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
-    "sender": "mohan.procurement@example.com",
+    "body": "Contract signature deadline. This message requires confirmation and a same-day response because the operational risk is escalating quickly. Reference INC-4211 for Blue Harbor Bank. The issue affects 51 staff members and the requested next update is due within 75 minutes. People operations should confirm policy handling before the agent responds.",
+    "sender": "mohan.procurement@blueharbor.example",
     "sender_name": "Mohan",
     "timestamp": "2026-03-04T09:21:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "CSM note: Blue Harbor Bank reopened incident INC-4211 after workaround failure.",
+      "Internal ops note: severity raised to SEV-2 pending triage action."
+    ],
     "true_category": "urgent",
     "required_keywords": [
       "incident",
@@ -76,13 +82,12 @@
   {
     "email_id": "email-005",
     "subject": "Data export deadline problem",
-    "body": "Data export deadline problem. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
-    "sender": "sameer.compliance@example.com",
+    "body": "Data export deadline problem. Several users are unable to complete a required workflow and the failure is causing business disruption right now. Reference INC-4204 for Trailhead People Ops. The issue affects 30 staff members and the requested next update is due within 30 minutes. Our support team needs the account context and current workaround status.",
+    "sender": "sameer.compliance@trailhead.example",
     "sender_name": "Sameer",
     "timestamp": "2026-03-05T12:14:00Z",
     "thread_history": [
-      "Customer followed up asking for an update.",
-      "Internal team confirmed reproducibility."
+      "CSM note: Trailhead People Ops reopened incident INC-4204 after workaround failure."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -96,11 +101,13 @@
   {
     "email_id": "email-046",
     "subject": "Vacation workflow question",
-    "body": "Vacation workflow question. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
-    "sender": "miguel.hr@example.com",
+    "body": "Vacation workflow question. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling. The sender is evaluating Riverstone Energy account setup under request REQ-4206 and expects a clear, factual answer with the right department context. People operations should confirm policy handling before the agent responds.",
+    "sender": "miguel.hr@riverstone.example",
     "sender_name": "Miguel",
     "timestamp": "2026-03-07T14:16:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Account executive note: Riverstone Energy is in evaluation stage with request REQ-4206."
+    ],
     "true_category": "inquiry",
     "required_keywords": [
       "question",
@@ -113,12 +120,12 @@
   {
     "email_id": "email-027",
     "subject": "Renewal prep timeline",
-    "body": "Renewal prep timeline. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
-    "sender": "mia.procurement@example.com",
+    "body": "Renewal prep timeline. No urgent action is required. This is mainly for planning, scheduling, or status visibility. This note is tied to OPS-4214 for Riverstone Energy and is mostly for planning clarity. The next internal checkpoint is on business day 4. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "mia.procurement@riverstone.example",
     "sender_name": "Mia",
     "timestamp": "2026-03-07T12:24:00Z",
     "thread_history": [
-      "Meeting notes attached in the prior message."
+      "Project coordinator note: OPS-4214 was mentioned in last week's status review."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -132,12 +139,13 @@
   {
     "email_id": "email-010",
     "subject": "Pending wire transfer",
-    "body": "Pending wire transfer. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
-    "sender": "helen.ap@example.com",
+    "body": "Pending wire transfer. We have a live production issue that is blocking critical work and needs immediate action from your team today. Reference INC-4209 for Acorn Retail. The issue affects 45 staff members and the requested next update is due within 45 minutes. Finance needs the invoice and billing owner details to resolve it quickly.",
+    "sender": "helen.ap@acorn.example",
     "sender_name": "Helen",
     "timestamp": "2026-03-02T17:19:00Z",
     "thread_history": [
-      "Automated alert triggered 20 minutes ago."
+      "CSM note: Acorn Retail reopened incident INC-4209 after workaround failure.",
+      "Internal ops note: severity raised to SEV-2 pending triage action."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -151,11 +159,13 @@
   {
     "email_id": "email-030",
     "subject": "Crypto newsletter invite",
-    "body": "Crypto newsletter invite. Treat this as low-value or potentially malicious email rather than a legitimate request.",
-    "sender": "vip.profits@example.com",
+    "body": "Crypto newsletter invite. Treat this as low-value or potentially malicious email rather than a legitimate request. The message references fake campaign code MKT-4202 and pushes an unsolicited call to action toward Silverline Labs with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "vip.profits@silverline.example",
     "sender_name": "VIP",
     "timestamp": "2026-03-03T10:12:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4202 scored above phishing threshold."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "fraud",
@@ -167,12 +177,12 @@
   {
     "email_id": "email-017",
     "subject": "Onboarding completed",
-    "body": "Onboarding completed. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
-    "sender": "mei.success@example.com",
+    "body": "Onboarding completed. We are sharing normal project coordination details and would appreciate confirmation when convenient. This note is tied to OPS-4204 for Trailhead People Ops and is mostly for planning clarity. The next internal checkpoint is on business day 3. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "mei.success@trailhead.example",
     "sender_name": "Mei",
     "timestamp": "2026-03-05T12:14:00Z",
     "thread_history": [
-      "Previous update shared last week."
+      "Project coordinator note: OPS-4204 was mentioned in last week's status review."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -186,11 +196,13 @@
   {
     "email_id": "email-032",
     "subject": "Unexpected newsletter signup",
-    "body": "Unexpected newsletter signup. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
-    "sender": "hello.newsletter@example.com",
+    "body": "Unexpected newsletter signup. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language. The message references fake campaign code MKT-4204 and pushes an unsolicited call to action toward Trailhead People Ops with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "hello.newsletter@trailhead.example",
     "sender_name": "Hello",
     "timestamp": "2026-03-05T12:14:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4204 scored above phishing threshold."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "phishing",
@@ -202,11 +214,14 @@
   {
     "email_id": "email-022",
     "subject": "Implementation workshop timing",
-    "body": "Implementation workshop timing. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
-    "sender": "owen.cs@example.com",
+    "body": "Implementation workshop timing. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful. This note is tied to OPS-4209 for Acorn Retail and is mostly for planning clarity. The next internal checkpoint is on business day 2. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "owen.cs@acorn.example",
     "sender_name": "Owen",
     "timestamp": "2026-03-02T17:19:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Project coordinator note: OPS-4209 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Acorn Retail requested a lightweight acknowledgement."
+    ],
     "true_category": "normal",
     "required_keywords": [
       "thanks",
@@ -219,11 +234,13 @@
   {
     "email_id": "email-013",
     "subject": "Weekly project update",
-    "body": "Weekly project update. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
-    "sender": "priya.pm@example.com",
+    "body": "Weekly project update. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful. This note is tied to OPS-4200 for Northwind Health and is mostly for planning clarity. The next internal checkpoint is on business day 2. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "priya.pm@northwind.example",
     "sender_name": "Priya",
     "timestamp": "2026-03-01T08:10:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Project coordinator note: OPS-4200 was mentioned in last week's status review."
+    ],
     "true_category": "normal",
     "required_keywords": [
       "thanks",
@@ -236,12 +253,13 @@
   {
     "email_id": "email-004",
     "subject": "Payroll cutoff issue",
-    "body": "Payroll cutoff issue. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
-    "sender": "olivia.hr@example.com",
+    "body": "Payroll cutoff issue. We have a live production issue that is blocking critical work and needs immediate action from your team today. Reference INC-4203 for Blue Harbor Bank. The issue affects 27 staff members and the requested next update is due within 75 minutes. People operations should confirm policy handling before the agent responds.",
+    "sender": "olivia.hr@blueharbor.example",
     "sender_name": "Olivia",
     "timestamp": "2026-03-04T11:13:00Z",
     "thread_history": [
-      "Automated alert triggered 20 minutes ago."
+      "CSM note: Blue Harbor Bank reopened incident INC-4203 after workaround failure.",
+      "Internal ops note: severity raised to SEV-2 pending triage action."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -255,11 +273,13 @@
   {
     "email_id": "email-040",
     "subject": "API rate limits question",
-    "body": "API rate limits question. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
-    "sender": "harper.dev@example.com",
+    "body": "API rate limits question. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling. The sender is evaluating Northwind Health account setup under request REQ-4200 and expects a clear, factual answer with the right department context. Our support team needs the account context and current workaround status.",
+    "sender": "harper.dev@northwind.example",
     "sender_name": "Harper",
     "timestamp": "2026-03-01T08:10:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Account executive note: Northwind Health is in evaluation stage with request REQ-4200."
+    ],
     "true_category": "inquiry",
     "required_keywords": [
       "question",
@@ -272,11 +292,14 @@
   {
     "email_id": "email-039",
     "subject": "Domain security renewal",
-    "body": "Domain security renewal. Treat this as low-value or potentially malicious email rather than a legitimate request.",
-    "sender": "notice.domain@example.com",
+    "body": "Domain security renewal. Treat this as low-value or potentially malicious email rather than a legitimate request. The message references fake campaign code MKT-4211 and pushes an unsolicited call to action toward Blue Harbor Bank with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "notice.domain@blueharbor.example",
     "sender_name": "Notice",
     "timestamp": "2026-03-04T09:21:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4211 scored above phishing threshold.",
+      "Previous auto-filter missed a similar campaign targeting Blue Harbor Bank."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "fraud",
@@ -288,13 +311,12 @@
   {
     "email_id": "email-011",
     "subject": "Employee file exposure",
-    "body": "Employee file exposure. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
-    "sender": "amelia.peopleops@example.com",
+    "body": "Employee file exposure. Several users are unable to complete a required workflow and the failure is causing business disruption right now. Reference INC-4210 for Silverline Labs. The issue affects 48 staff members and the requested next update is due within 60 minutes. This requires legal review before any commitment is sent back to the sender.",
+    "sender": "amelia.peopleops@silverline.example",
     "sender_name": "Amelia",
     "timestamp": "2026-03-03T08:20:00Z",
     "thread_history": [
-      "Customer followed up asking for an update.",
-      "Internal team confirmed reproducibility."
+      "CSM note: Silverline Labs reopened incident INC-4210 after workaround failure."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -308,11 +330,13 @@
   {
     "email_id": "email-025",
     "subject": "Confirm attendee list",
-    "body": "Confirm attendee list. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
-    "sender": "zoe.events@example.com",
+    "body": "Confirm attendee list. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful. This note is tied to OPS-4212 for Trailhead People Ops and is mostly for planning clarity. The next internal checkpoint is on business day 2. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "zoe.events@trailhead.example",
     "sender_name": "Zoe",
     "timestamp": "2026-03-05T10:22:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Project coordinator note: OPS-4212 was mentioned in last week's status review."
+    ],
     "true_category": "normal",
     "required_keywords": [
       "thanks",
@@ -325,11 +349,13 @@
   {
     "email_id": "email-036",
     "subject": "Urgent invoice attachment",
-    "body": "Urgent invoice attachment. Treat this as low-value or potentially malicious email rather than a legitimate request.",
-    "sender": "billing.invoice@example.com",
+    "body": "Urgent invoice attachment. Treat this as low-value or potentially malicious email rather than a legitimate request. The message references fake campaign code MKT-4208 and pushes an unsolicited call to action toward Northwind Health with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "billing.invoice@northwind.example",
     "sender_name": "Billing",
     "timestamp": "2026-03-01T16:18:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4208 scored above phishing threshold."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "fraud",
@@ -341,12 +367,12 @@
   {
     "email_id": "email-001",
     "subject": "Production outage in region",
-    "body": "Production outage in region. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
-    "sender": "nina.ops@example.com",
+    "body": "Production outage in region. We have a live production issue that is blocking critical work and needs immediate action from your team today. Reference INC-4200 for Northwind Health. The issue affects 18 staff members and the requested next update is due within 30 minutes. Our support team needs the account context and current workaround status.",
+    "sender": "nina.ops@northwind.example",
     "sender_name": "Nina",
     "timestamp": "2026-03-01T08:10:00Z",
     "thread_history": [
-      "Automated alert triggered 20 minutes ago."
+      "CSM note: Northwind Health reopened incident INC-4200 after workaround failure."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -360,12 +386,12 @@
   {
     "email_id": "email-044",
     "subject": "SAML and SCIM support",
-    "body": "SAML and SCIM support. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
-    "sender": "trent.it@example.com",
+    "body": "SAML and SCIM support. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed. The sender is evaluating Trailhead People Ops account setup under request REQ-4204 and expects a clear, factual answer with the right department context. Our support team needs the account context and current workaround status.",
+    "sender": "trent.it@trailhead.example",
     "sender_name": "Trent",
     "timestamp": "2026-03-05T12:14:00Z",
     "thread_history": [
-      "Security review already completed."
+      "Account executive note: Trailhead People Ops is in evaluation stage with request REQ-4204."
     ],
     "true_category": "inquiry",
     "required_keywords": [
@@ -379,11 +405,13 @@
   {
     "email_id": "email-019",
     "subject": "Training session reminder",
-    "body": "Training session reminder. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
-    "sender": "sophia.enablement@example.com",
+    "body": "Training session reminder. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful. This note is tied to OPS-4206 for Riverstone Energy and is mostly for planning clarity. The next internal checkpoint is on business day 2. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "sophia.enablement@riverstone.example",
     "sender_name": "Sophia",
     "timestamp": "2026-03-07T14:16:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Project coordinator note: OPS-4206 was mentioned in last week's status review."
+    ],
     "true_category": "normal",
     "required_keywords": [
       "thanks",
@@ -396,11 +424,13 @@
   {
     "email_id": "email-034",
     "subject": "Reset payroll account",
-    "body": "Reset payroll account. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
-    "sender": "alerts.payroll@example.com",
+    "body": "Reset payroll account. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive. The message references fake campaign code MKT-4206 and pushes an unsolicited call to action toward Riverstone Energy with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "alerts.payroll@riverstone.example",
     "sender_name": "Alerts",
     "timestamp": "2026-03-07T14:16:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4206 scored above phishing threshold."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "spam",
@@ -412,11 +442,14 @@
   {
     "email_id": "email-049",
     "subject": "Failed reimbursements",
-    "body": "Failed reimbursements. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
-    "sender": "rachel.finance@example.com",
+    "body": "Failed reimbursements. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling. The sender is evaluating Acorn Retail account setup under request REQ-4209 and expects a clear, factual answer with the right department context. Finance needs the invoice and billing owner details to resolve it quickly.",
+    "sender": "rachel.finance@acorn.example",
     "sender_name": "Rachel",
     "timestamp": "2026-03-02T17:19:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Account executive note: Acorn Retail is in evaluation stage with request REQ-4209.",
+      "Internal note: likely owner is billing unless policy scope changes."
+    ],
     "true_category": "inquiry",
     "required_keywords": [
       "question",
@@ -429,12 +462,12 @@
   {
     "email_id": "email-042",
     "subject": "Parental leave policy",
-    "body": "Parental leave policy. The request asks for clarification on billing, support, legal, or HR behavior.",
-    "sender": "hannah.people@example.com",
+    "body": "Parental leave policy. The request asks for clarification on billing, support, legal, or HR behavior. The sender is evaluating Silverline Labs account setup under request REQ-4202 and expects a clear, factual answer with the right department context. People operations should confirm policy handling before the agent responds.",
+    "sender": "hannah.people@silverline.example",
     "sender_name": "Hannah",
     "timestamp": "2026-03-03T10:12:00Z",
     "thread_history": [
-      "Comparing vendors this quarter."
+      "Account executive note: Silverline Labs is in evaluation stage with request REQ-4202."
     ],
     "true_category": "inquiry",
     "required_keywords": [
@@ -448,11 +481,14 @@
   {
     "email_id": "email-031",
     "subject": "Claim your gift card",
-    "body": "Claim your gift card. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
-    "sender": "rewards.voucher@example.com",
+    "body": "Claim your gift card. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive. The message references fake campaign code MKT-4203 and pushes an unsolicited call to action toward Blue Harbor Bank with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "rewards.voucher@blueharbor.example",
     "sender_name": "Rewards",
     "timestamp": "2026-03-04T11:13:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4203 scored above phishing threshold.",
+      "Previous auto-filter missed a similar campaign targeting Blue Harbor Bank."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "spam",
@@ -464,11 +500,14 @@
   {
     "email_id": "email-029",
     "subject": "Mailbox quota full",
-    "body": "Mailbox quota full. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
-    "sender": "security.alerts@example.com",
+    "body": "Mailbox quota full. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language. The message references fake campaign code MKT-4201 and pushes an unsolicited call to action toward Acorn Retail with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "security.alerts@acorn.example",
     "sender_name": "Security",
     "timestamp": "2026-03-02T09:11:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4201 scored above phishing threshold.",
+      "Previous auto-filter missed a similar campaign targeting Acorn Retail."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "phishing",
@@ -480,12 +519,12 @@
   {
     "email_id": "email-021",
     "subject": "Quarterly review notes",
-    "body": "Quarterly review notes. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
-    "sender": "elena.accounts@example.com",
+    "body": "Quarterly review notes. No urgent action is required. This is mainly for planning, scheduling, or status visibility. This note is tied to OPS-4208 for Northwind Health and is mostly for planning clarity. The next internal checkpoint is on business day 4. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "elena.accounts@northwind.example",
     "sender_name": "Elena",
     "timestamp": "2026-03-01T16:18:00Z",
     "thread_history": [
-      "Meeting notes attached in the prior message."
+      "Project coordinator note: OPS-4208 was mentioned in last week's status review."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -499,12 +538,12 @@
   {
     "email_id": "email-023",
     "subject": "Documentation refresh complete",
-    "body": "Documentation refresh complete. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
-    "sender": "isla.docs@example.com",
+    "body": "Documentation refresh complete. We are sharing normal project coordination details and would appreciate confirmation when convenient. This note is tied to OPS-4210 for Silverline Labs and is mostly for planning clarity. The next internal checkpoint is on business day 3. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "isla.docs@silverline.example",
     "sender_name": "Isla",
     "timestamp": "2026-03-03T08:20:00Z",
     "thread_history": [
-      "Previous update shared last week."
+      "Project coordinator note: OPS-4210 was mentioned in last week's status review."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -518,11 +557,14 @@
   {
     "email_id": "email-043",
     "subject": "Need DPA details",
-    "body": "Need DPA details. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling.",
-    "sender": "sara.procurement@example.com",
+    "body": "Need DPA details. The sender is evaluating a feature or policy and needs a clear informational response rather than urgent incident handling. The sender is evaluating Blue Harbor Bank account setup under request REQ-4203 and expects a clear, factual answer with the right department context. This requires legal review before any commitment is sent back to the sender.",
+    "sender": "sara.procurement@blueharbor.example",
     "sender_name": "Sara",
     "timestamp": "2026-03-04T11:13:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Account executive note: Blue Harbor Bank is in evaluation stage with request REQ-4203.",
+      "Internal note: likely owner is legal unless policy scope changes."
+    ],
     "true_category": "inquiry",
     "required_keywords": [
       "question",
@@ -535,12 +577,13 @@
   {
     "email_id": "email-047",
     "subject": "Export formats support",
-    "body": "Export formats support. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
-    "sender": "chloe.data@example.com",
+    "body": "Export formats support. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed. The sender is evaluating Meridian Bio account setup under request REQ-4207 and expects a clear, factual answer with the right department context. This requires legal review before any commitment is sent back to the sender.",
+    "sender": "chloe.data@meridian.example",
     "sender_name": "Chloe",
     "timestamp": "2026-03-08T15:17:00Z",
     "thread_history": [
-      "Security review already completed."
+      "Account executive note: Meridian Bio is in evaluation stage with request REQ-4207.",
+      "Internal note: likely owner is legal unless policy scope changes."
     ],
     "true_category": "inquiry",
     "required_keywords": [
@@ -554,11 +597,14 @@
   {
     "email_id": "email-037",
     "subject": "Free AI market report",
-    "body": "Free AI market report. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
-    "sender": "reports.market@example.com",
+    "body": "Free AI market report. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive. The message references fake campaign code MKT-4209 and pushes an unsolicited call to action toward Acorn Retail with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "reports.market@acorn.example",
     "sender_name": "Reports",
     "timestamp": "2026-03-02T17:19:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4209 scored above phishing threshold.",
+      "Previous auto-filter missed a similar campaign targeting Acorn Retail."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "spam",
@@ -570,11 +616,14 @@
   {
     "email_id": "email-033",
     "subject": "Cheap backlinks available",
-    "body": "Cheap backlinks available. Treat this as low-value or potentially malicious email rather than a legitimate request.",
-    "sender": "sales.rank@example.com",
+    "body": "Cheap backlinks available. Treat this as low-value or potentially malicious email rather than a legitimate request. The message references fake campaign code MKT-4205 and pushes an unsolicited call to action toward Pinecone Systems with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "sales.rank@pinecone.example",
     "sender_name": "Sales",
     "timestamp": "2026-03-06T13:15:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4205 scored above phishing threshold.",
+      "Previous auto-filter missed a similar campaign targeting Pinecone Systems."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "fraud",
@@ -586,12 +635,13 @@
   {
     "email_id": "email-045",
     "subject": "Invoice recipients question",
-    "body": "Invoice recipients question. The request asks for clarification on billing, support, legal, or HR behavior.",
-    "sender": "lila.finance@example.com",
+    "body": "Invoice recipients question. The request asks for clarification on billing, support, legal, or HR behavior. The sender is evaluating Pinecone Systems account setup under request REQ-4205 and expects a clear, factual answer with the right department context. Finance needs the invoice and billing owner details to resolve it quickly.",
+    "sender": "lila.finance@pinecone.example",
     "sender_name": "Lila",
     "timestamp": "2026-03-06T13:15:00Z",
     "thread_history": [
-      "Comparing vendors this quarter."
+      "Account executive note: Pinecone Systems is in evaluation stage with request REQ-4205.",
+      "Internal note: likely owner is billing unless policy scope changes."
     ],
     "true_category": "inquiry",
     "required_keywords": [
@@ -605,12 +655,13 @@
   {
     "email_id": "email-014",
     "subject": "Reschedule roadmap meeting",
-    "body": "Reschedule roadmap meeting. We are sharing normal project coordination details and would appreciate confirmation when convenient.",
-    "sender": "aaron.strategy@example.com",
+    "body": "Reschedule roadmap meeting. We are sharing normal project coordination details and would appreciate confirmation when convenient. This note is tied to OPS-4201 for Acorn Retail and is mostly for planning clarity. The next internal checkpoint is on business day 3. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "aaron.strategy@acorn.example",
     "sender_name": "Aaron",
     "timestamp": "2026-03-02T09:11:00Z",
     "thread_history": [
-      "Previous update shared last week."
+      "Project coordinator note: OPS-4201 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Acorn Retail requested a lightweight acknowledgement."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -624,12 +675,12 @@
   {
     "email_id": "email-050",
     "subject": "Policy acknowledgement scope",
-    "body": "Policy acknowledgement scope. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
-    "sender": "jasmine.people@example.com",
+    "body": "Policy acknowledgement scope. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed. The sender is evaluating Silverline Labs account setup under request REQ-4210 and expects a clear, factual answer with the right department context. People operations should confirm policy handling before the agent responds.",
+    "sender": "jasmine.people@silverline.example",
     "sender_name": "Jasmine",
     "timestamp": "2026-03-03T08:20:00Z",
     "thread_history": [
-      "Security review already completed."
+      "Account executive note: Silverline Labs is in evaluation stage with request REQ-4210."
     ],
     "true_category": "inquiry",
     "required_keywords": [
@@ -643,12 +694,12 @@
   {
     "email_id": "email-048",
     "subject": "Auto-renewal terms",
-    "body": "Auto-renewal terms. The request asks for clarification on billing, support, legal, or HR behavior.",
-    "sender": "kevin.legalops@example.com",
+    "body": "Auto-renewal terms. The request asks for clarification on billing, support, legal, or HR behavior. The sender is evaluating Northwind Health account setup under request REQ-4208 and expects a clear, factual answer with the right department context. Our support team needs the account context and current workaround status.",
+    "sender": "kevin.legalops@northwind.example",
     "sender_name": "Kevin",
     "timestamp": "2026-03-01T16:18:00Z",
     "thread_history": [
-      "Comparing vendors this quarter."
+      "Account executive note: Northwind Health is in evaluation stage with request REQ-4208."
     ],
     "true_category": "inquiry",
     "required_keywords": [
@@ -662,11 +713,13 @@
   {
     "email_id": "email-003",
     "subject": "Immediate legal notice",
-    "body": "Immediate legal notice. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
-    "sender": "jordan.legal@example.com",
+    "body": "Immediate legal notice. This message requires confirmation and a same-day response because the operational risk is escalating quickly. Reference INC-4202 for Silverline Labs. The issue affects 24 staff members and the requested next update is due within 60 minutes. This requires legal review before any commitment is sent back to the sender.",
+    "sender": "jordan.legal@silverline.example",
     "sender_name": "Jordan",
     "timestamp": "2026-03-03T10:12:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "CSM note: Silverline Labs reopened incident INC-4202 after workaround failure."
+    ],
     "true_category": "urgent",
     "required_keywords": [
       "legal",
@@ -679,11 +732,13 @@
   {
     "email_id": "email-028",
     "subject": "Boost traffic fast",
-    "body": "Boost traffic fast. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive.",
-    "sender": "promo.growth@example.com",
+    "body": "Boost traffic fast. This promotional or suspicious message should not receive a direct reply and usually belongs in the archive. The message references fake campaign code MKT-4200 and pushes an unsolicited call to action toward Northwind Health with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "promo.growth@northwind.example",
     "sender_name": "Promo",
     "timestamp": "2026-03-01T08:10:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4200 scored above phishing threshold."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "spam",
@@ -695,11 +750,13 @@
   {
     "email_id": "email-038",
     "subject": "Remote assistant offer",
-    "body": "Remote assistant offer. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
-    "sender": "careers.hiring@example.com",
+    "body": "Remote assistant offer. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language. The message references fake campaign code MKT-4210 and pushes an unsolicited call to action toward Silverline Labs with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "careers.hiring@silverline.example",
     "sender_name": "Careers",
     "timestamp": "2026-03-03T08:20:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4210 scored above phishing threshold."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "phishing",
@@ -711,11 +768,14 @@
   {
     "email_id": "email-006",
     "subject": "Termination dispute response",
-    "body": "Termination dispute response. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
-    "sender": "rebecca.legal@example.com",
+    "body": "Termination dispute response. This message requires confirmation and a same-day response because the operational risk is escalating quickly. Reference INC-4205 for Pinecone Systems. The issue affects 33 staff members and the requested next update is due within 45 minutes. Finance needs the invoice and billing owner details to resolve it quickly.",
+    "sender": "rebecca.legal@pinecone.example",
     "sender_name": "Rebecca",
     "timestamp": "2026-03-06T13:15:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "CSM note: Pinecone Systems reopened incident INC-4205 after workaround failure.",
+      "Internal ops note: severity raised to SEV-2 pending triage action."
+    ],
     "true_category": "urgent",
     "required_keywords": [
       "billing",
@@ -728,11 +788,14 @@
   {
     "email_id": "email-035",
     "subject": "Warm B2B leads",
-    "body": "Warm B2B leads. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language.",
-    "sender": "contact.leads@example.com",
+    "body": "Warm B2B leads. The sender is attempting to drive clicks, collect credentials, or force engagement through marketing language. The message references fake campaign code MKT-4207 and pushes an unsolicited call to action toward Meridian Bio with no legitimate account context. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "contact.leads@meridian.example",
     "sender_name": "Contact",
     "timestamp": "2026-03-08T15:17:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Mail gateway note: sender fingerprint for MKT-4207 scored above phishing threshold.",
+      "Previous auto-filter missed a similar campaign targeting Meridian Bio."
+    ],
     "true_category": "spam",
     "required_keywords": [
       "phishing",
@@ -744,12 +807,12 @@
   {
     "email_id": "email-007",
     "subject": "SSO login outage",
-    "body": "SSO login outage. We have a live production issue that is blocking critical work and needs immediate action from your team today.",
-    "sender": "leo.it@example.com",
+    "body": "SSO login outage. We have a live production issue that is blocking critical work and needs immediate action from your team today. Reference INC-4206 for Riverstone Energy. The issue affects 36 staff members and the requested next update is due within 60 minutes. This requires legal review before any commitment is sent back to the sender.",
+    "sender": "leo.it@riverstone.example",
     "sender_name": "Leo",
     "timestamp": "2026-03-07T14:16:00Z",
     "thread_history": [
-      "Automated alert triggered 20 minutes ago."
+      "CSM note: Riverstone Energy reopened incident INC-4206 after workaround failure."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -763,11 +826,13 @@
   {
     "email_id": "email-009",
     "subject": "Subpoena for audit records",
-    "body": "Subpoena for audit records. This message requires confirmation and a same-day response because the operational risk is escalating quickly.",
-    "sender": "david.legal@example.com",
+    "body": "Subpoena for audit records. This message requires confirmation and a same-day response because the operational risk is escalating quickly. Reference INC-4208 for Northwind Health. The issue affects 42 staff members and the requested next update is due within 30 minutes. Our support team needs the account context and current workaround status.",
+    "sender": "david.legal@northwind.example",
     "sender_name": "David",
     "timestamp": "2026-03-01T16:18:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "CSM note: Northwind Health reopened incident INC-4208 after workaround failure."
+    ],
     "true_category": "urgent",
     "required_keywords": [
       "urgent",
@@ -780,12 +845,12 @@
   {
     "email_id": "email-015",
     "subject": "Monthly usage report",
-    "body": "Monthly usage report. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
-    "sender": "lucy.analytics@example.com",
+    "body": "Monthly usage report. No urgent action is required. This is mainly for planning, scheduling, or status visibility. This note is tied to OPS-4202 for Silverline Labs and is mostly for planning clarity. The next internal checkpoint is on business day 4. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "lucy.analytics@silverline.example",
     "sender_name": "Lucy",
     "timestamp": "2026-03-03T10:12:00Z",
     "thread_history": [
-      "Meeting notes attached in the prior message."
+      "Project coordinator note: OPS-4202 was mentioned in last week's status review."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -799,11 +864,14 @@
   {
     "email_id": "email-016",
     "subject": "Partnership memo review",
-    "body": "Partnership memo review. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful.",
-    "sender": "gabriel.bizdev@example.com",
+    "body": "Partnership memo review. This is a routine operational update with no immediate urgency, but a short acknowledgement would be helpful. This note is tied to OPS-4203 for Blue Harbor Bank and is mostly for planning clarity. The next internal checkpoint is on business day 2. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "gabriel.bizdev@blueharbor.example",
     "sender_name": "Gabriel",
     "timestamp": "2026-03-04T11:13:00Z",
-    "thread_history": [],
+    "thread_history": [
+      "Project coordinator note: OPS-4203 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Blue Harbor Bank requested a lightweight acknowledgement."
+    ],
     "true_category": "normal",
     "required_keywords": [
       "thanks",
@@ -816,12 +884,13 @@
   {
     "email_id": "email-018",
     "subject": "Steering committee agenda",
-    "body": "Steering committee agenda. No urgent action is required. This is mainly for planning, scheduling, or status visibility.",
-    "sender": "ben.operations@example.com",
+    "body": "Steering committee agenda. No urgent action is required. This is mainly for planning, scheduling, or status visibility. This note is tied to OPS-4205 for Pinecone Systems and is mostly for planning clarity. The next internal checkpoint is on business day 4. No special routing is needed if the agent classifies the message correctly.",
+    "sender": "ben.operations@pinecone.example",
     "sender_name": "Ben",
     "timestamp": "2026-03-06T13:15:00Z",
     "thread_history": [
-      "Meeting notes attached in the prior message."
+      "Project coordinator note: OPS-4205 was mentioned in last week's status review.",
+      "Meeting prep note: stakeholders from Pinecone Systems requested a lightweight acknowledgement."
     ],
     "true_category": "normal",
     "required_keywords": [
@@ -835,13 +904,13 @@
   {
     "email_id": "email-002",
     "subject": "Payment processor failures",
-    "body": "Payment processor failures. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
-    "sender": "marcus.finance@example.com",
+    "body": "Payment processor failures. Several users are unable to complete a required workflow and the failure is causing business disruption right now. Reference INC-4201 for Acorn Retail. The issue affects 21 staff members and the requested next update is due within 45 minutes. Finance needs the invoice and billing owner details to resolve it quickly.",
+    "sender": "marcus.finance@acorn.example",
     "sender_name": "Marcus",
     "timestamp": "2026-03-02T09:11:00Z",
     "thread_history": [
-      "Customer followed up asking for an update.",
-      "Internal team confirmed reproducibility."
+      "CSM note: Acorn Retail reopened incident INC-4201 after workaround failure.",
+      "Internal ops note: severity raised to SEV-2 pending triage action."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -855,13 +924,13 @@
   {
     "email_id": "email-008",
     "subject": "Duplicate annual charge",
-    "body": "Duplicate annual charge. Several users are unable to complete a required workflow and the failure is causing business disruption right now.",
-    "sender": "claire.accounts@example.com",
+    "body": "Duplicate annual charge. Several users are unable to complete a required workflow and the failure is causing business disruption right now. Reference INC-4207 for Meridian Bio. The issue affects 39 staff members and the requested next update is due within 75 minutes. People operations should confirm policy handling before the agent responds.",
+    "sender": "claire.accounts@meridian.example",
     "sender_name": "Claire",
     "timestamp": "2026-03-08T15:17:00Z",
     "thread_history": [
-      "Customer followed up asking for an update.",
-      "Internal team confirmed reproducibility."
+      "CSM note: Meridian Bio reopened incident INC-4207 after workaround failure.",
+      "Internal ops note: severity raised to SEV-2 pending triage action."
     ],
     "true_category": "urgent",
     "required_keywords": [
@@ -875,12 +944,13 @@
   {
     "email_id": "email-041",
     "subject": "Annual billing for seats",
-    "body": "Annual billing for seats. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed.",
-    "sender": "carter.procurement@example.com",
+    "body": "Annual billing for seats. This is a legitimate product or policy question that should be answered accurately and routed to the right team when needed. The sender is evaluating Acorn Retail account setup under request REQ-4201 and expects a clear, factual answer with the right department context. Finance needs the invoice and billing owner details to resolve it quickly.",
+    "sender": "carter.procurement@acorn.example",
     "sender_name": "Carter",
     "timestamp": "2026-03-02T09:11:00Z",
     "thread_history": [
-      "Security review already completed."
+      "Account executive note: Acorn Retail is in evaluation stage with request REQ-4201.",
+      "Internal note: likely owner is billing unless policy scope changes."
     ],
     "true_category": "inquiry",
     "required_keywords": [

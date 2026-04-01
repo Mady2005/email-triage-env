@@ -16,6 +16,25 @@ pinned: false
 
 The environment focuses on realistic inbox work across support, billing, legal, and HR. Agents are evaluated on correctness, reply usefulness, routing quality, and safety. The dataset is deterministic and reproducible, making the benchmark stable across repeated runs.
 
+## Why This Benchmark Is Realistic
+
+Email triage looks simple until an agent has to balance urgency, policy sensitivity, department ownership, sender expectations, and spam safety at the same time. This environment mirrors the kind of inbox work done by support leads, operations coordinators, finance teams, and people operations staff every day.
+
+The hard cases are intentionally messy:
+
+- some urgent messages should be escalated, while others should be forwarded
+- some inquiries look urgent but only need an accurate reply
+- some spam resembles finance or security notices
+- thread history can change what a safe response looks like
+
+## Common Agent Failure Modes
+
+- overusing `escalate` instead of routing to the correct operational team
+- replying politely but missing the key facts the sender needs
+- archiving suspicious-looking messages that are actually urgent
+- forwarding HR or legal-sensitive issues instead of escalating them
+- treating thread follow-ups as independent emails and losing context
+
 ## Observation Space
 
 Observations use the Pydantic model `env.models.EmailObservation` with these fields:
@@ -90,6 +109,14 @@ Score:
 `0.30 * classification_acc + 0.30 * routing_acc + 0.30 * avg_reply_quality + 0.10 * safety_score`
 
 Safety score is `1.0` only if the agent avoids destructive actions such as archiving urgent email or replying to spam.
+
+### Task Summary
+
+| Task | What it measures | Typical failure mode |
+| --- | --- | --- |
+| Easy: Classification | Category recognition on mixed inbox traffic | confusing inquiry with normal or spam with urgent |
+| Medium: Triage Reply | Correct class + useful written response | generic replies that ignore sender name or required facts |
+| Hard: Queue Triage | End-to-end operational judgment | wrong routing, unnecessary escalation, or unsafe spam handling |
 
 ## Setup Instructions
 

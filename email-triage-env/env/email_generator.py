@@ -9,10 +9,102 @@ from .models import EmailRecord, EmailObservation
 
 DATA_PATH = Path(__file__).resolve().parents[1] / "data" / "emails.json"
 SEED = 42
+ORG_NAMES = [
+    "Northwind Health",
+    "Acorn Retail",
+    "Silverline Labs",
+    "Blue Harbor Bank",
+    "Trailhead People Ops",
+    "Pinecone Systems",
+    "Riverstone Energy",
+    "Meridian Bio",
+]
+EMAIL_DOMAINS = [
+    "northwind.example",
+    "acorn.example",
+    "silverline.example",
+    "blueharbor.example",
+    "trailhead.example",
+    "pinecone.example",
+    "riverstone.example",
+    "meridian.example",
+]
+REFERENCE_PREFIX = {
+    "urgent": "INC",
+    "normal": "OPS",
+    "spam": "MKT",
+    "inquiry": "REQ",
+}
+DEPARTMENT_NOTES = {
+    "support": "Our support team needs the account context and current workaround status.",
+    "billing": "Finance needs the invoice and billing owner details to resolve it quickly.",
+    "legal": "This requires legal review before any commitment is sent back to the sender.",
+    "hr": "People operations should confirm policy handling before the agent responds.",
+    None: "No special routing is needed if the agent classifies the message correctly.",
+}
 
 
 def _keywordize(*parts: str) -> list[str]:
     return [part.lower() for part in parts]
+
+
+def _build_reference(category: str, index: int) -> str:
+    return f"{REFERENCE_PREFIX[category]}-{4200 + index}"
+
+
+def _build_sender_email(sender_name: str, team: str, index: int) -> str:
+    domain = EMAIL_DOMAINS[index % len(EMAIL_DOMAINS)]
+    return f"{sender_name.lower()}.{team}@{domain}"
+
+
+def _build_contextual_body(category: str, subject: str, base_body: str, index: int, routing: str | None) -> str:
+    reference = _build_reference(category, index)
+    org_name = ORG_NAMES[index % len(ORG_NAMES)]
+    context_lines = {
+        "urgent": (
+            f"Reference {reference} for {org_name}. The issue affects {18 + index * 3} staff members "
+            f"and the requested next update is due within {30 + (index % 4) * 15} minutes."
+        ),
+        "normal": (
+            f"This note is tied to {reference} for {org_name} and is mostly for planning clarity. "
+            f"The next internal checkpoint is on business day {2 + (index % 3)}."
+        ),
+        "spam": (
+            f"The message references fake campaign code {reference} and pushes an unsolicited call to action "
+            f"toward {org_name} with no legitimate account context."
+        ),
+        "inquiry": (
+            f"The sender is evaluating {org_name} account setup under request {reference} and expects "
+            f"a clear, factual answer with the right department context."
+        ),
+    }
+    routing_note = DEPARTMENT_NOTES[routing]
+    return f"{subject}. {base_body} {context_lines[category]} {routing_note}"
+
+
+def _build_thread_history(category: str, index: int, routing: str | None) -> list[str]:
+    reference = _build_reference(category, index)
+    org_name = ORG_NAMES[index % len(ORG_NAMES)]
+    base_threads = {
+        "urgent": [
+            f"CSM note: {org_name} reopened incident {reference} after workaround failure.",
+            f"Internal ops note: severity raised to SEV-{1 + (index % 2)} pending triage action.",
+        ],
+        "normal": [
+            f"Project coordinator note: {reference} was mentioned in last week's status review.",
+            f"Meeting prep note: stakeholders from {org_name} requested a lightweight acknowledgement.",
+        ],
+        "spam": [
+            f"Mail gateway note: sender fingerprint for {reference} scored above phishing threshold.",
+            f"Previous auto-filter missed a similar campaign targeting {org_name}.",
+        ],
+        "inquiry": [
+            f"Account executive note: {org_name} is in evaluation stage with request {reference}.",
+            f"Internal note: likely owner is {routing or 'general operations'} unless policy scope changes.",
+        ],
+    }
+    count = 1 + (index % 2)
+    return base_threads[category][:count]
 
 
 def build_seeded_emails() -> list[dict]:
@@ -216,16 +308,22 @@ def build_seeded_emails() -> list[dict]:
         for index in range(spec["count"]):
             sender_name, team = spec["senders"][index]
             subject = spec["subjects"][index]
-            body = f"{subject}. {spec['bodies'][index % len(spec['bodies'])]}"
+            body = _build_contextual_body(
+                category,
+                subject,
+                spec["bodies"][index % len(spec["bodies"])],
+                index,
+                spec["routing_cycle"][index % len(spec["routing_cycle"])],
+            )
             keywords = spec["keywords"][index % len(spec["keywords"])]
             routing = spec["routing_cycle"][index % len(spec["routing_cycle"])]
-            thread_history = spec["thread_history"][index % len(spec["thread_history"])]
+            thread_history = _build_thread_history(category, index, routing)
             emails.append(
                 {
                     "email_id": f"email-{len(emails) + 1:03d}",
                     "subject": subject,
                     "body": body,
-                    "sender": f"{sender_name.lower()}.{team}@example.com",
+                    "sender": _build_sender_email(sender_name, team, index),
                     "sender_name": sender_name,
                     "timestamp": f"2026-03-{base_day + (index % 8):02d}T{8 + (index % 10):02d}:{10 + (index % 40):02d}:00Z",
                     "thread_history": thread_history,
